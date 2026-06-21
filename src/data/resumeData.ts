@@ -23,6 +23,7 @@ export const resumeData: ResumeData = {
     'Python / FastAPI Backend Developer',
     'Distributed Systems Builder',
     'LLM & RAG Pipeline Engineer',
+    'AI Agentic Systems Developer'
   ],
   email: 'johnybhiduri8955@gmail.com',
   phone: '+91 89552 34081',
@@ -46,9 +47,9 @@ export const resumeData: ResumeData = {
   skills: [
     // Languages
     { name: 'Python', category: 'Languages', level: 'Expert', years: 3 },
-    { name: 'TypeScript', category: 'Languages', level: 'Advanced', years: 2 },
-    { name: 'JavaScript', category: 'Languages', level: 'Advanced', years: 3 },
-    { name: 'SQL', category: 'Languages', level: 'Proficient' },
+    { name: 'TypeScript', category: 'Languages', level: 'Proficient', years: 2 },
+    { name: 'JavaScript', category: 'Languages', level: 'Proficient', years: 2 },
+    { name: 'NoSQL', category: 'Languages', level: 'Advanced' },
 
     // Backend & APIs
     { name: 'FastAPI', category: 'Backend & APIs', level: 'Expert', years: 3 },
@@ -67,13 +68,13 @@ export const resumeData: ResumeData = {
 
     // AI / ML
     { name: 'AWS Bedrock', category: 'AI / ML', level: 'Advanced' },
-    { name: 'RAG / LangChain / FAISS', category: 'AI / ML', level: 'Advanced' },
+    { name: 'RAG / LangChain / FAISS', category: 'AI / ML', level: 'Expert' },
     { name: 'LLM Integration & Prompt Engineering', category: 'AI / ML', level: 'Expert', years: 2 },
-    { name: 'Multi-LLM APIs (OpenAI, Anthropic, Cohere)', category: 'AI / ML', level: 'Advanced' },
+    { name: 'Multi-LLM APIs (OpenAI, Anthropic, Cohere)', category: 'AI / ML', level: 'Expert' },
 
     // Data
-    { name: 'MongoDB', category: 'Data', level: 'Proficient' },
-    { name: 'Redis', category: 'Data', level: 'Proficient' },
+    { name: 'MongoDB', category: 'Data', level: 'Advanced' },
+    { name: 'Redis', category: 'Data', level: 'Advanced' },
   ],
 
   // ---------------------------------------------------------------------
@@ -85,7 +86,7 @@ export const resumeData: ResumeData = {
     {
       role: 'Software Engineer II',
       company: 'NetraLabs',
-      companyUrl: '', // e.g. 'https://netralabs.ai' — add your company site here
+      companyUrl: 'https://netralabs.ai', // e.g. 'https://netralabs.ai' — add your company site here
       period: 'Jan 2025 – Present',
       description: [
         'Rebuilt document-processing pipeline from synchronous to async batch execution using AWS SQS/SNS, reducing per-document processing time by 20× and eliminating HTTP failures under high concurrency.',
@@ -98,7 +99,7 @@ export const resumeData: ResumeData = {
     {
       role: 'Software Engineer I',
       company: 'NetraLabs',
-      companyUrl: '',
+      companyUrl: 'https://netralabs.ai',
       period: 'Jun 2024 – Jan 2025',
       description: [
         'Sole engineer for IMS (Secure Document Exchange for US Correction Centers): delivered end-to-end system design to production, replacing vulnerable paper-based processes.',
@@ -111,7 +112,7 @@ export const resumeData: ResumeData = {
     {
       role: 'Associate Python Developer',
       company: 'NetraLabs',
-      companyUrl: '',
+      companyUrl: 'https://netralabs.ai',
       period: 'Jun 2023 – Jun 2024',
       description: [
         'Shipped FastAPI microservices and AWS Lambda functions for agent orchestration, authentication, and multi-LLM API integration (OpenAI, Anthropic, Cohere).',
@@ -122,7 +123,7 @@ export const resumeData: ResumeData = {
     {
       role: 'ML Intern (Intern of the Month ×2)',
       company: 'NetraLabs', // was "NetraLabs (Netra AI)" — kept identical to the rest so it joins the same growth timeline
-      companyUrl: '',
+      companyUrl: 'https://netralabs.ai',
       period: 'Mar 2023 – Jun 2023',
       description: [
         'Fine-tuned YOLOv5 for custom object detection and deployed Flask inference APIs.',
@@ -151,11 +152,54 @@ export const resumeData: ResumeData = {
         'Owned production deployment, monitoring, and on-call stability for the service.',
       ],
       tech: ['AWS Bedrock', 'SQS/SNS', 'FastAPI', 'React', 'MongoDB', 'S3'],
-      link: '', // add a live/demo URL here if you have one
+      link: 'https://accessibilityondemand.ai/', // add a live/demo URL here if you have one
       github: 'https://github.com/Johnybhiduri',
       images: [
-        // '/projects/aod-1.png',
+        '/public/aod.webp',
         // '/projects/aod-2.png',
+      ],
+    },
+    {
+      title: 'Q-SMS – Virtual Number Platform',
+      description:
+        'QS​MS is a virtual number platform designed to help users verify accounts and access online services without exposing their personal phone numbers.',
+      fullDescription:
+        'Q-SMS is a secure virtual number service that enables users to receive SMS messages for account verification and online service access without sharing their personal phone numbers. It provides a layer of privacy and security, allowing users to manage multiple virtual numbers for different purposes while keeping their real phone number confidential. It has 1000+ services, 100+ conutries and 100+ users.',
+      contributions: [
+        'I built this project from scratch as the sole developer, designing and implementing the entire system end-to-end. Created Frontend using React and backend using FastAPI, with MongoDB for data storage and AWS services for infrastructure. Used NowPayments API for payment processing and JWT for secure authentication.',
+      ],
+      tech: ['React', 'Redux', 'Python', 'FastAPI', 'AWS', 'JWT', 'NowPayments', "crypto", "MongoDB"],
+      link: 'https://q-sms.store/',
+      github: 'https://github.com/Johnybhiduri',
+      images: [
+        '/public/q-sms1.png',
+        '/public/q-sms4.png',
+        '/public/q-sms2.png',
+        '/public/q-sms3.png'
+      ],
+    },
+    {
+      title: 'First Search AI – Use Latest HuggingFace Models in Your Browser for Free',
+      description:
+        'First Search AI is an open-source React-based platform to explore, test, and interact with Hugging Face AI models through a simple and user-friendly interface.',
+      fullDescription:
+        'First Search AI is a web application that provides a simple interface for discovering and experimenting with Hugging Face models without requiring users to work directly with APIs. The platform allows users to browse available inference-supported models and interact with AI capabilities like text generation, summarization, classification, and more. Built with React and Vite, it focuses on making AI model exploration accessible for developers, researchers, and non-technical users. The project integrates Hugging Face APIs to provide real-time model interaction through a clean and intuitive UI.',
+      contributions: [
+        'Designed and developed the complete application independently from scratch, including frontend architecture, UI, and core functionality.',
+        'Built a responsive React + Vite interface with Tailwind CSS for a clean and user-friendly experience.',
+        'Integrated Hugging Face APIs to dynamically fetch available models and enable real-time AI inference.',
+        'Implemented model browsing and filtering capabilities to help users discover AI models based on task categories.',
+        'Developed the interaction workflow allowing users to send prompts and receive model-generated responses directly from the application.',
+        'Managed the complete project lifecycle including idea validation, development, deployment, and open-source setup.',
+        'Deployed the application and configured it for public access through a production-ready environment.',
+        'Created the project to simplify AI experimentation by removing the complexity of API setup and model integration for users.'
+      ],
+      tech: ['React', 'Redux', "HuggingFace API", "Tailwind CSS", "Vercel"],
+      link: 'https://first-search-ai.vercel.app/',
+      github: 'https://github.com/Johnybhiduri/First-Search-AI',
+      images: [
+        '/public/fsai.jpeg',
+        
       ],
     },
     {
@@ -173,7 +217,9 @@ export const resumeData: ResumeData = {
       tech: ['React', 'Redux', 'Python', 'FastAPI', 'AWS', 'JWT'],
       link: '',
       github: 'https://github.com/Johnybhiduri',
-      images: [],
+      images: [
+        '/public/ims.png',
+      ],
     },
     {
       title: 'Ground Truth – No-Code AI Agent Builder',
@@ -201,8 +247,8 @@ export const resumeData: ResumeData = {
     {
       degree: 'PG Diploma, AI & Machine Learning',
       institution: 'McCombs School of Business, UT Austin, USA',
-      institutionUrl: '', // e.g. 'https://www.mccombs.utexas.edu'
-      certificateUrl: '', // e.g. link to your certificate / Credly badge
+      institutionUrl: 'https://www.mygreatlearning.com/eportfolio/jainendrabhiduri', // e.g. 'https://www.mccombs.utexas.edu'
+      certificateUrl: 'https://www.mygreatlearning.com/certificate/TFTJSQOI', // e.g. link to your certificate / Credly badge
       period: 'Sep 2022 – Aug 2023',
       grade: 'Focus: Supervised/Unsupervised Learning, NLP, CV, Deep Learning',
       description:
@@ -212,12 +258,13 @@ export const resumeData: ResumeData = {
         'Deep learning architectures (CNNs, RNNs/Transformers) for vision and NLP',
         'Applied NLP — text classification, embeddings, sequence modeling',
         'Computer vision — object detection and image classification pipelines',
+        'Recommender systems, time series forecasting, and model deployment best practices',
       ],
     },
     {
       degree: 'B.Sc. (Hons.) Polymer Science',
       institution: 'Delhi University — BCAS, New Delhi',
-      institutionUrl: '',
+      institutionUrl: 'https://www.bcas.du.ac.in/',
       certificateUrl: '',
       period: 'Jun 2019 – Jun 2022',
       description:
@@ -235,7 +282,7 @@ export const resumeData: ResumeData = {
       title: '#1 Global PDF Accessibility Platform',
       description: 'Platform outperforms Adobe in compliance scores; officially adopted by US DOJ & federal agencies.',
       year: '2025',
-      link: '',
+      link: 'https://accessibilityondemand.ai/',
     },
     {
       title: 'Sole Engineer on US Gov Project',
@@ -253,7 +300,7 @@ export const resumeData: ResumeData = {
       title: 'Intern of the Month (×2)',
       description: 'Recognized twice for rapid delivery of YOLOv5 deployment and LangChain automation chatbots.',
       year: '2023',
-      link: '',
+      link: 'https://drive.google.com/drive/folders/11QjwE9ZOcXY7cU48WCvF_VFQiGYnM6Jm?usp=sharing',
     },
   ],
 };
