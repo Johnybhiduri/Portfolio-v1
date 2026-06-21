@@ -11,6 +11,7 @@
 //   project modal automatically becomes a swipeable carousel.
 // - If two `experiences` entries in a row share the same `company`, they're
 //   rendered as a single growth timeline (promotions) instead of repeating
+import { imgs } from './projectImages';
 //   the company card.
 import type { ResumeData } from './types';
 export const resumeData: ResumeData = {
@@ -152,10 +153,7 @@ export const resumeData: ResumeData = {
       tech: ['AWS Bedrock', 'SQS/SNS', 'FastAPI', 'React', 'MongoDB', 'S3'],
       link: 'https://accessibilityondemand.ai/', // add a live/demo URL here if you have one
       github: 'https://github.com/Johnybhiduri',
-      images: [
-        '../src/assets/project/aod.webp',
-        // '../src/assets/project/aod-2.png',
-      ],
+      images: imgs('aod.webp'),
     },
     {
       title: 'Q-SMS – Virtual Number Platform',
@@ -169,12 +167,7 @@ export const resumeData: ResumeData = {
       tech: ['React', 'Redux', 'Python', 'FastAPI', 'AWS', 'JWT', 'NowPayments', "crypto", "MongoDB"],
       link: 'https://q-sms.store/',
       github: 'https://github.com/Johnybhiduri',
-      images: [
-        '../src/assets/project/q-sms1.png',
-        '../src/assets/project/q-sms4.png',
-        '../src/assets/project/q-sms2.png',
-        '../src/assets/project/q-sms3.png'
-      ],
+      images: imgs('q-sms1', 'q-sms2', 'q-sms3', 'q-sms4'),
     },
     {
       title: 'First Search AI – Use Latest HuggingFace Models in Your Browser for Free',
@@ -195,10 +188,7 @@ export const resumeData: ResumeData = {
       tech: ['React', 'Redux', "HuggingFace API", "Tailwind CSS", "Vercel"],
       link: 'https://first-search-ai.vercel.app/',
       github: 'https://github.com/Johnybhiduri/First-Search-AI',
-      images: [
-        '../src/assets/project/fsai.jpeg',
-        
-      ],
+      images: imgs('fsai.jpeg'),
     },
     {
       title: 'IMS – Secure Document Exchange',
@@ -215,9 +205,7 @@ export const resumeData: ResumeData = {
       tech: ['React', 'Redux', 'Python', 'FastAPI', 'AWS', 'JWT'],
       link: '',
       github: 'https://github.com/Johnybhiduri',
-      images: [
-        '../src/assets/project/ims.png',
-      ],
+      images: imgs('ims.png'),
     },
     {
       title: 'Ground Truth – No-Code AI Agent Builder',
@@ -233,7 +221,7 @@ export const resumeData: ResumeData = {
       tech: ['ReactFlow', 'FastAPI', 'FAISS', 'SageMaker', 'LangChain'],
       link: '',
       github: 'https://github.com/Johnybhiduri',
-      images: [],
+      images: imgs(),
     },
   ],
 
