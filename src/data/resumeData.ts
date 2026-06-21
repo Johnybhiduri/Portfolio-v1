@@ -12,9 +12,7 @@
 // - If two `experiences` entries in a row share the same `company`, they're
 //   rendered as a single growth timeline (promotions) instead of repeating
 //   the company card.
-
 import type { ResumeData } from './types';
-
 export const resumeData: ResumeData = {
   name: 'Jainendra Bhiduri',
   title: 'Software Engineer II | AI & Distributed Systems',
@@ -155,8 +153,8 @@ export const resumeData: ResumeData = {
       link: 'https://accessibilityondemand.ai/', // add a live/demo URL here if you have one
       github: 'https://github.com/Johnybhiduri',
       images: [
-        '/public/aod.webp',
-        // '/projects/aod-2.png',
+        '../src/assets/project/aod.webp',
+        // '../src/assets/project/aod-2.png',
       ],
     },
     {
@@ -172,10 +170,10 @@ export const resumeData: ResumeData = {
       link: 'https://q-sms.store/',
       github: 'https://github.com/Johnybhiduri',
       images: [
-        '/public/q-sms1.png',
-        '/public/q-sms4.png',
-        '/public/q-sms2.png',
-        '/public/q-sms3.png'
+        '../src/assets/project/q-sms1.png',
+        '../src/assets/project/q-sms4.png',
+        '../src/assets/project/q-sms2.png',
+        '../src/assets/project/q-sms3.png'
       ],
     },
     {
@@ -198,7 +196,7 @@ export const resumeData: ResumeData = {
       link: 'https://first-search-ai.vercel.app/',
       github: 'https://github.com/Johnybhiduri/First-Search-AI',
       images: [
-        '/public/fsai.jpeg',
+        '../src/assets/project/fsai.jpeg',
         
       ],
     },
@@ -218,7 +216,7 @@ export const resumeData: ResumeData = {
       link: '',
       github: 'https://github.com/Johnybhiduri',
       images: [
-        '/public/ims.png',
+        '../src/assets/project/ims.png',
       ],
     },
     {
