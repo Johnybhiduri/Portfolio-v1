@@ -37,6 +37,9 @@ export const resumeData: ResumeData = {
     { platform: 'GitHub', url: 'https://github.com/Johnybhiduri' },
     { platform: 'LinkedIn', url: 'https://linkedin.com/in/jainendra-bhiduri-245054220' },
     { platform: 'Email', url: 'mailto:johnybhiduri8955@gmail.com' },
+    { platform: 'X', url: 'https://x.com/JohnyEther' },
+    { platform: 'Upwork', url: 'https://www.upwork.com/freelancers/~01d629c0e9f874b586' },
+    { platform: 'LeetCode', url: 'https://leetcode.com/u/JohnyBhiduri/' }
   ],
 
   // ---------------------------------------------------------------------
@@ -223,6 +226,45 @@ export const resumeData: ResumeData = {
       github: 'https://github.com/Johnybhiduri',
       images: imgs(),
     },
+    {
+      title: 'Q-SMS Blogs - Next.js + Tailwind CSS Blog Platform',
+      description:
+        'Easy-to-use blog platform built with Next.js and Tailwind CSS, designed for developers and content creators to quickly publish and manage their blogs with a modern, responsive interface.',
+      fullDescription:
+        'Q-SMS Blogs is a blog platform that allows users to create, manage, and publish their blogs with ease. Built using Next.js for server-side rendering and Tailwind CSS for styling, the platform provides a fast and responsive user experience. It includes features such as markdown support, SEO optimization, and a clean, modern design that is mobile-friendly. The platform is ideal for developers, writers, and content creators who want to share their ideas and projects with a wider audience. The project is open-source and can be easily customized or extended to fit specific needs. Just add you blogs as a .md file in the blogs folder and it will automatically be added to the blog list. Supports multiple blogs and categories.',
+      contributions: [
+        "Designed and developed the complete application independently, including frontend architecture, UI, and core functionality.",
+        "Built a responsive Next.js interface with Tailwind CSS for a clean and user-friendly experience.",
+        "Implemented markdown support for blog content, allowing users to write and format their posts easily.",
+        "Optimized the platform for SEO, ensuring that blogs are discoverable by search engines.",
+        "Developed a dynamic blog listing page that automatically updates when new markdown files are added to the 'blogs' folder.",
+        "Managed the complete project lifecycle including idea validation, development, deployment, and open-source setup.",
+        "Deployed the application and configured it for public access through a production-ready environment.",
+        "Created the project to simplify blog publishing for developers and content creators, providing a modern and efficient platform for sharing ideas and projects."
+      ],
+      tech: ['Next.js', 'Tailwind CSS', 'Markdown', 'Vercel', 'SEO Optimization', 'Responsive Design'],
+      link: 'https://q-sms.store/blog',
+      github: 'https://github.com/Johnybhiduri/q-sms-blogs',
+      images: imgs('port1.jpg', 'port2.jpg', 'port3.jpg', 'port4.jpg', 'port5.jpg'),
+    },
+    {
+      title: 'Movie Recommendation System',
+      description:
+        'Streamlit app that recommends movies based on user input, leveraging collaborative filtering and content-based filtering techniques for personalized suggestions.',
+      fullDescription:
+        'Streamlit app that recommends movies based on user input, leveraging collaborative filtering and content-based filtering techniques for personalized suggestions. The system uses a combination of user ratings and movie metadata to generate recommendations, providing users with a tailored movie-watching experience. The app features an intuitive interface where users can input their favorite movies or genres, and the recommendation engine returns a list of suggested films that align with their preferences. The project demonstrates the application of machine learning algorithms in building recommendation systems and showcases the integration of data processing, model training, and user interface design in a cohesive application.',
+      contributions: [
+        "Developed the recommendation engine using collaborative filtering and content-based filtering techniques to provide personalized movie suggestions.",
+        "Built the Streamlit app interface, allowing users to input their favorite movies or genres and receive tailored recommendations.",
+        "Used Similarity metrics and user ratings to enhance the accuracy of the recommendation system.",
+        "Implemented data preprocessing and feature extraction to improve the quality of recommendations.",
+        "Created the project to demonstrate the application of machine learning algorithms in building recommendation systems and providing a personalized user experience."
+      ],
+      tech: ["Python", "Streamlit", "Collaborative Filtering", "Content-Based Filtering", "Machine Learning", "Data Preprocessing", "Feature Extraction", "Recommendation Systems", "pandas", "NumPy", "scikit-learn"],
+      link: '',
+      github: 'https://github.com/Johnybhiduri/Movie-Recommender-System-',
+      images: imgs("movie_rec.png"),
+    }
   ],
 
   // ---------------------------------------------------------------------
