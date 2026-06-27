@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { resumeData } from '../data/resumeData';
 import { FaDownload } from 'react-icons/fa6';
 import { getSocialIcon } from './Icons';
+import ResumeModal from './ResumeModal';
 
 /** Simple typing/deleting effect cycling through resumeData.roles. */
 function useTypewriter(words: string[], typeMs = 55, deleteMs = 30, pauseMs = 1500) {
@@ -40,6 +41,8 @@ function useTypewriter(words: string[], typeMs = 55, deleteMs = 30, pauseMs = 15
 export default function Hero() {
   const roles = resumeData.roles && resumeData.roles.length > 0 ? resumeData.roles : [resumeData.title];
   const typed = useTypewriter(roles);
+  const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
+  
 
   return (
     <section id="hero" className="pt-28 pb-16 md:pt-36 md:pb-24 scroll-mt-20">
@@ -101,13 +104,12 @@ export default function Hero() {
           >
             Get In Touch
           </a>
-          <a
-            href={resumeData.resumeLink}
-            download
-            className="px-6 py-3 rounded-full border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 font-medium flex items-center justify-center gap-2 transition"
-          >
-            <FaDownload /> Download Resume
-          </a>
+          <button
+  onClick={() => setIsResumeModalOpen(true)}
+  className="px-6 py-3 rounded-full border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 font-medium flex items-center justify-center gap-2 transition"
+>
+  <FaDownload /> Download Resume
+</button>
         </motion.div>
 
         <motion.div
@@ -163,6 +165,7 @@ export default function Hero() {
             </div>
           </motion.div>
         )}
+        <ResumeModal isOpen={isResumeModalOpen} onClose={() => setIsResumeModalOpen(false)} />
       </div>
     </section>
   );

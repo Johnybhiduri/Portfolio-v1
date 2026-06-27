@@ -21,6 +21,7 @@ import {
   FaDiagramProject,
   FaDatabase,
   FaShieldHalved,
+  FaUpwork
 } from 'react-icons/fa6';
 import {
   SiPython,
@@ -36,6 +37,7 @@ import {
   SiDocker,
   SiLangchain,
   SiOpenai,
+  SiLeetcode
 } from 'react-icons/si';
 
 // ---------------------------------------------------------------------------
@@ -49,6 +51,8 @@ const socialIconMap: Record<string, IconType> = {
   x: FaXTwitter,
   email: FaEnvelope,
   mail: FaEnvelope,
+  upwork:FaUpwork,
+  leetcode: SiLeetcode,
 };
 
 /** Resolve the right brand icon for a social platform name (case-insensitive). */
